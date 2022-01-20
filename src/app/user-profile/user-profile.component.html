@@ -1,0 +1,15 @@
+<div>
+    <div class="user-img">
+        <img [src]="userProfile.avatar_url" alt="user photo">
+    </div>
+    <h4 class="card-title mt-2">{{userProfile.login}}</h4>
+    <p>{{userProfile.bio}}</p>
+    <a [href]="userProfile.html_url" target="_blank" class="btn-sm">View Profile</a><br>
+
+    <p>Followers: {{userProfile.followers}}</p>
+    <p>Followers: {{userProfile.following}}</p>
+
+    <p>Joined: {{userProfile.created_at | dateCount}} days ago.</p>
+
+    <p>No. of public Repos: {{userProfile.public_repos}}</p>
+</div>

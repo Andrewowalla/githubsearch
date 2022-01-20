@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Noto Sans Mono', monospace;
+
+    nav {
+        a {
+            font-weight: 500;
+            font-size: 23px;
+            color: #FFB703;            
+        }
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 34px;
+        color: #495057;
+    }
+}
+

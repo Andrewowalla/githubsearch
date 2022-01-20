@@ -1,0 +1,9 @@
+<div >    
+    <div class="holder" >
+        <div *ngFor="let repo of userRepositories" class="repo my-2">
+            <h5>Name: {{repo.name}}</h5>
+            <p>Languages: {{repo.language}}</p>
+            <p>Created: {{repo.created_at | date | dateCount}} days ago</p>
+        </div>
+    </div>
+</div>

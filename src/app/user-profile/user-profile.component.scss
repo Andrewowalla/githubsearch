@@ -1,0 +1,25 @@
+img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+div {
+    background-color: rgba(251, 255, 255, 0.514);
+    padding: 1rem;
+    border-radius: 28px;
+
+    a {
+        text-decoration: none;
+        height: 50;
+        width: 158;
+        background-color: #011627;
+        padding: .5rem 1rem;
+        color: whitesmoke;
+        margin-bottom: 1rem;
+    }
+
+    .user-img {
+        width: auto;
+    }
+}

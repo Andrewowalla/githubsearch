@@ -1,0 +1,45 @@
+<div class="base">
+  <ng-progress></ng-progress>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Github-Search</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto offset-md-4" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto offset-md-4">
+            <a class="nav-item nav-link active" routerLink="/home">Home</a>
+            <a class="nav-item nav-link" routerLink="/search">Search</a>
+            <a class="nav-item nav-link" routerLink="/about">About</a>
+          </div>
+        </div>
+      </nav> 
+
+    <div id='container'>
+        <div class="bar">
+
+        </div>
+        <div class="search-bar">
+            <form class="form-inline" (submit)="searchUser(userQuery)">
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="userQuery" placeholder="Tob e" [(ngModel)]="userQuery" name="userQuery" required>   
+
+                <button type="submit" class="btn btn-primary mb-2">Search</button>
+              </form>
+        </div>       
+    </div>
+
+    <div class="container info" *ngIf='showTab'>
+      <div class="user-info row container-fluid">
+        <div class="col ">
+          <app-user-profile [userProfile]="userProfile"></app-user-profile>
+        </div>
+      </div>  
+  
+      <div class="user-repos row container-fluid">
+        <div class="col ">
+          <app-user-repos [userRepositories]="userRepositories"></app-user-repos>
+        </div>
+      </div>  
+    </div>   
+
+</div>

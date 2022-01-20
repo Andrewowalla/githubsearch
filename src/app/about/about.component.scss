@@ -1,0 +1,20 @@
+.base {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color:grey;
+    align-items: center;
+
+    .message {
+        margin: 0 auto;
+        height: auto;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        hr {
+            color: black;
+        }
+    }
+}
