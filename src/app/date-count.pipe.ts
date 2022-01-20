@@ -16,7 +16,6 @@ export class DateCountPipe implements PipeTransform {
   
       console.log(dateDifferenceSeconds/secondsInDay)
       return dateCounter  
-  
 
   }
 
