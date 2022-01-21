@@ -9,6 +9,8 @@ It is a website where users may enter a GitHub username into a form, submit it, 
 {Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
 ## Known Bugs
 For now the application has no issue but or any problem
+## Link to the deployed site
+https://andrewowalla.github.io/githubsearch/
 ## Technologies Used
 This application uses a simple programming languages called Angular..
 ## Support and contact details
