@@ -16,6 +16,6 @@ export class GetUserService {
   }
 
   getUserRepos(searchQuery:any){
-    return this.httpClient.get(`${this.apiUrl}${searchQuery}/repos?${this.token}`)
+    return this.httpClient.get(`}${searchQuery}/repos?${this.token}`)
   }
 }
