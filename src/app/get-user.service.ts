@@ -8,14 +8,11 @@ import { environment } from 'src/environments/environment'
 export class GetUserService {
 
   constructor(private httpClient: HttpClient) { }
-
-  private apiUrl = environment.apiUrl
   private token = environment.token
-  private clientId = environment.clientId
-  private clientSecret = environment.clientSecret
+
 
   getUserData(searchQuery:any){
-    return this.httpClient.get(`https://api.github.com/users/${searchQuery}?${this.clientId}&client_secret=${this.clientSecret}`)
+    return this.httpClient.get(`https://api.github.com/users/${searchQuery}?`)
   }
 
   getUserRepos(searchQuery:any){
