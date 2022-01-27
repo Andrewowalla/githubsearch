@@ -6,13 +6,14 @@ import { environment } from 'src/environments/environment'
   providedIn: 'root'
 })
 export class GetUserService {
-
+  searchQuery!:any;
   constructor(private httpClient: HttpClient) { }
   private token = environment.token
 
 
   getUserData(searchQuery:any){
-    return this.httpClient.get(`https://api.github.com/users/${searchQuery}?`)
+    
+    return this.httpClient.get(`https://api.github.com/users/${searchQuery}?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`)
   }
 
   getUserRepos(searchQuery:any){
