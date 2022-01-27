@@ -3,12 +3,11 @@
 ## Description
 It is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories.
 ## Setup/Installation Requirements
-* Its free for use
-* in a simple
-* easy-to-understand
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+*  enter a GitHub username into a form
+* 
+* 
 ## Known Bugs
-For now the application has no issue but or any problem
+For now the application has no issue or any problem
 ## Link to the deployed site
 https://andrewowalla.github.io/githubsearch/
 ## Technologies Used
